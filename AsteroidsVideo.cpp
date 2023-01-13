@@ -15,6 +15,13 @@ public:
 
 
 private:
+    struct sSpaceObject
+    {
+        float x;
+        float y;
+        float dx;
+        float dy;
+    }
 
 protected:
     //Called by olcConsoleGameEngine
