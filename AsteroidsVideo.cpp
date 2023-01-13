@@ -17,7 +17,13 @@ public:
 private:
 
 protected:
+    //Called by olcConsoleGameEngine
+    virtual bool OnUserCreate()
+    {
+        return true;
+    }
 
+    //Called
 int maint()
 {
     return 0;
