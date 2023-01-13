@@ -12,7 +12,7 @@ public:
     {
         m_sAppName = L"Asteroids";
     }
-}
+
 
 private:
 
@@ -23,8 +23,17 @@ protected:
         return true;
     }
 
-    //Called
+    //Called by olcConsoleGameEngine
+    virtual bool OnUserUpdate(float fElapsedTime)
+    {
+        // Clear Screen
+        Fill(0, 0, ScreenWidth(), ScreenHeight(), PIXEL_SOLID, 0);
+        return true;
+    }
+}
+
 int maint()
 {
+    
     return 0;
 }
