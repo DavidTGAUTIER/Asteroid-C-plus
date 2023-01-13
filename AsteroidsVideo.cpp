@@ -34,6 +34,9 @@ protected:
 
 int maint()
 {
-    
+    // Use olcConsoleGameEngine derived app
+    OneLoneCoder_Asteroids game;
+    game.ConstructConsole(160, 100, 8, 8);
+    game.Start();
     return 0;
 }
