@@ -30,7 +30,7 @@ protected:
     //Called by olcConsoleGameEngine
     virtual bool OnUserCreate()
     {
-        vecAsteroids.push_back({ 20.0f, 20.0f})
+        vecAsteroids.push_back({ 20.0f, 20.0f, 8.0f, -6.0f, (int)16})
         return true;
     }
 
