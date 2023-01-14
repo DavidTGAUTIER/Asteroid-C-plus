@@ -1,4 +1,4 @@
-/* explain */
+/* explain a */
 
 #include <iostream>
 using namespace std;
