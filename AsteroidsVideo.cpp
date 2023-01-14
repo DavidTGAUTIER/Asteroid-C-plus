@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-#include "oldConsoleGameEngine.h"
+#include "olcConsoleGameEngine.h"
 
 class OneLoneCoder_Asteroids : public olcConsoleGameEngine
 {
@@ -21,12 +21,16 @@ private:
         float y;
         float dx;
         float dy;
-    }
+        int nSize;
+    };
+
+    vector<sSpaceObject> vecAsteroids;
 
 protected:
     //Called by olcConsoleGameEngine
     virtual bool OnUserCreate()
     {
+        vecAsteroids.push_back({ 20.0f, 20.0f})
         return true;
     }
 
