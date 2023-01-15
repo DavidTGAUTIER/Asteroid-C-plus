@@ -26,7 +26,11 @@ public:
 };
 
 int main() {
+    /*on initialise la classe Example par l'instance demo*/
     Example demo;
+    /*on applique la methode ConstructConsole(largeur-array, longueur-array, largeur-objet, longueur-objet)*/
     demo.ConstructConsole(160, 100, 8, 8);
+    /*on demarre le thread qui executera le moteur du jeu*/
+    demo.Start();
     return 0;
 }
