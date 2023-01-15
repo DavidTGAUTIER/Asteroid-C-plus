@@ -8,9 +8,9 @@ protected:
 	HANDLE m_hOriginalConsole;
 	CONSOLE_SCREEN_BUFFER_INFO m_OriginalConsoleInfo;
 
-    /* on commence par deux HANDLE pour chaque console qui est par defaut les buffers(mémoire tampon qui stocke temporairement des données) de sortie 
-	HANDLE m_hConsole;
-	HANDLE m_hConsoleIn;
+    /* on commence par deux HANDLE pour chaque console qui est par defaut les buffers(mémoire tampon qui stocke temporairement des données) de sortie et chaque console pour les buffers d'entrée.
+	HANDLE m_hConsole;   /*buffer de sortie*/
+	HANDLE m_hConsoleIn; /*buffer d'entree'*/
 	SMALL_RECT m_rectWindow;
 
     /* il s'agit de deux pointeurs vers des tableaux qui vont stocker les états du clavier */
