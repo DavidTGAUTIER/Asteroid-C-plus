@@ -10,6 +10,8 @@ protected:
 	HANDLE m_hConsole;
 	HANDLE m_hConsoleIn;
 	SMALL_RECT m_rectWindow;
+    /* il s'agit de deux pointeurs vers des tableaux qui vont stocker les états du clavier */
+    /* ils vont être augmentés car parce qu'on va stocker 256 états différents et les tableaux seront initialisés dans le constructeur */
 	short m_keyOldState[256] = { 0 };
 	short m_keyNewState[256] = { 0 };
 	bool m_mouseOldState[5] = { 0 };
