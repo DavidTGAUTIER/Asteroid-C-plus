@@ -33,6 +33,7 @@ protected:
         vecAsteroids.push_back({ 20.0f, 20.0f, 8.0f, -6.0f, (int)16})
 
         // Update and draw asteroids
+        for(auto &a: vecAsteroids)
         return true;
     }
 
