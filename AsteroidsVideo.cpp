@@ -32,11 +32,6 @@ protected:
     {
         vecAsteroids.push_back({ 20.0f, 20.0f, 8.0f, -6.0f, (int)16})
 
-        // Update and draw asteroids
-        for(auto &a: vecAsteroids)
-        {
-            a.x += a.dx * fElapseTime;
-        }
         return true;
     }
 
@@ -45,6 +40,12 @@ protected:
     {
         // Clear Screen
         Fill(0, 0, ScreenWidth(), ScreenHeight(), PIXEL_SOLID, 0);
+
+        // Update and draw asteroids
+        for(auto &a: vecAsteroids)
+        {
+            a.x += a.dx * fElapseTime;
+        }
         return true;
     }
 }
