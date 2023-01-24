@@ -34,6 +34,9 @@ protected:
 
         // Update and draw asteroids
         for(auto &a: vecAsteroids)
+        {
+            a.x += a.dx * fElapseTime;
+        }
         return true;
     }
 
