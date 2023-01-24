@@ -45,6 +45,7 @@ protected:
         for(auto &a: vecAsteroids)
         {
             a.x += a.dx * fElapseTime;
+            a.y += a.dy * fElapseTime;
         }
         return true;
     }
